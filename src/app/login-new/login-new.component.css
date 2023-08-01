@@ -1,0 +1,138 @@
+/* Style the form container */
+
+.form {
+
+    width: 500px;
+    /* Adjust the maximum width as per your design */
+
+    margin: 0 auto;
+    /* Center the form horizontally */
+
+    padding: 20px;
+    /* Add some padding around the form */
+
+    border: 1px solid #ccc;
+    /* Add a border around the form */
+
+    border-radius: 5px;
+    /* Round the corners of the form */
+
+    margin-top: 100px;
+
+    margin-left: 20px;
+
+    color: white;
+
+}
+
+
+
+
+
+/* Style the labels */
+
+label {
+
+    display: block;
+    /* Make labels block-level to add some vertical spacing */
+
+    font-weight: bold;
+    /* Add bold font weight to labels */
+
+    margin-bottom: 5px;
+    /* Add a little spacing below each label */
+
+
+
+}
+
+
+
+/* Style the input fields */
+
+.form-control {
+
+    width: 100%;
+    /* Make the input fields take up the full width of the container */
+
+    padding: 10px;
+    /* Add some padding inside the input fields */
+
+    margin-bottom: 10px;
+    /* Add spacing between input fields */
+
+    border: 1px solid #ccc;
+    /* Add a simple border for input fields */
+
+    border-radius: 5px;
+    /* Round the corners of input fields */
+
+}
+
+
+
+/* Style the button */
+
+button {
+
+    width: 100%;
+    /* Make the button take up the full width of the container */
+
+    padding: 10px 20px;
+    /* Add padding to the button */
+
+    background-color: #007bff;
+    /* Set a background color (adjust as per your design) */
+
+    color: #fff;
+    /* Set text color to white */
+
+    border: none;
+    /* Remove the default button border */
+
+    border-radius: 5px;
+    /* Round the corners of the button */
+
+    cursor: pointer;
+    /* Show a pointer cursor on hover */
+
+}
+
+
+
+/* Style the button on hover */
+
+button:hover {
+
+    background-color: #0056b3;
+    /* Darker background color on hover (adjust as per your design) */
+
+}
+
+.page-container {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-image: url("src/assets/login.png");
+    /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+
+    background-size: cover;
+    /* Adjust background image size to cover the container */
+
+    background-repeat: no-repeat;
+    /* Prevent background image from repeating */
+
+    background-position: center center;
+    /* Center the background image */
+
+    align-items: flex-start;
+
+    overflow: hidden;
+
+}

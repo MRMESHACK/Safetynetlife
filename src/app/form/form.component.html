@@ -1,0 +1,220 @@
+ <!-- <form id="form" >
+
+    <label for="firstname" >NAME</label><br>
+    <input type="text" id="firstname" name="firstname"  [(ngModel)]="nam" [(ngModel)]="project.name" ><br><br>
+    
+    <label for="duration">DURATION</label><br>
+    <input type="number" id="duration" name="duration"[(ngModel)]="dura" [(ngModel)]="policy.duration" ><br><br>
+    
+    <label for="radio" >GENDER</label><br>
+    <input type="radio" id="radio" name="radio">
+    <label for="radio" >MALE</label>
+    <input type="radio" id="radio" name="radio">
+    <label for="radio" >FEMALE</label> 
+   <br><br>
+    <label for="DOB" >DOB</label><br>
+    <input type="number" name="DOB" ><br><br> 
+     <label for="salary" >SALARY</label><br>
+    <input type="number" id="salary" name="salary" [(ngModel)]="sal" ><br><br><br>
+
+    <label for="relationship">RELATIONSHIP</label><br>
+  <select name="relationship" [(ngModel)]="policy.relationship">
+    <option value="self" >Self</option>
+    <option value="spouse" >Spouse</option>
+    <option value="child" >Child</option>
+
+
+    
+  </select><br><br>
+  
+    
+    <div *ngIf="sal <= 1000000">
+
+        Suggested Life Cover shall be: 50Lakhs
+      
+      </div>
+
+      <div *ngIf="sal >1000000 && sal<=5000000">
+
+        Suggested Life Cover shall be : 1CR
+      
+      </div>
+      <div *ngIf="sal > 5000000">
+
+        Suggested Life Cover shall be: 1.5CR
+      
+      </div>
+   
+     
+    
+      <button value="50 LAKHS" (click)="first()" >50 LAKHS</button>
+      <button value="1 CR" (click)="second()" >1 CR</button>
+      <button value="1.5 CR" (click)="third()" >1.5 CR</button>
+    
+      <br><br>
+     
+   
+      <button (click)="update(12)">MONTHLY</button>
+      <button (click)="update(4)">QUATERLY</button>
+      <button  (click)="update(1)">YEARLY</button>
+      
+    <br><br>
+      <button (click)="cal()">Calculate</button><br>
+
+      {{tot}}
+
+    </form>
+  &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <button (click)="persist()" [routerLink]="['/login-new']">PAY</button> 
+    <router-outlet></router-outlet>
+
+ -->
+
+
+
+ <div class="page-container">
+
+  <div class="form-container">
+
+  <form id="form" >
+
+  <h3 style="text-align: center;">Enter your details!</h3>
+
+ 
+
+    <label for="firstname" >NAME</label><br>
+
+    <input type="text" id="firstname" name="firstname" [(ngModel)]="nam" [(ngModel)]="project.name"placeholder="Enter your name" ><br>
+
+ 
+
+    <label for="duration">DURATION(In Years)</label><br>
+
+    <input type="number" id="duration" name="duration"[(ngModel)]="dura" [(ngModel)]="policy.duration" ><br>
+
+    <label for="bought">BOUGHT FOR</label><br>
+    <select name="bought for" [(ngModel)]="policy.relationship" class="family-dropdown">
+      <option value="Self" >Self</option>
+      <option value="Spouse" >Spouse</option>
+      <option value="Father" >Father</option>
+      <option value="Mother" >Mother</option>
+      <option value="Child" >Child</option>
+
+  
+
+  </select><br>
+
+   
+
+    <label for="radio" >GENDER</label><br>
+
+    <input type="radio" id="radio" name="radio">
+
+    <label for="radio" >MALE</label>
+
+    <input type="radio" id="radio" name="radio">
+
+    <label for="radio" >FEMALE</label>   <br><br>
+
+ 
+
+    <label for="DOB" >DOB</label><br>
+
+    <input type="date" name="DOB" ><br>
+
+ 
+
+     <label for="salary" >SALARY(Annually in Lakhs)</label><br>
+
+    <input type="number" id="salary" name="salary" [(ngModel)]="sal" placeholder="₹" ><br>
+
+     
+
+    <b><h4><div *ngIf="sal >= 100000 && sal<=1000000">Suggested Life Cover shall be 50 Lakhs </div>
+
+    <div *ngIf="sal >1000000 && sal<=6000000"> Suggested Life Cover shall be  1CR</div>
+
+    <div *ngIf="sal > 6000000">Suggested Life Cover shall be 1.5CR</div></h4></b>
+
+   
+
+     <br>
+
+    <!--LIFECOVER-->
+
+    <label>Choose your life cover plan:</label><br>
+
+      <button value="50 LAKHS" (click)="first()">50 LAKHS</button>
+
+      <button value="1 CR" (click)="second()">1 CR</button>
+
+      <button value="1.5 CR" (click)="third()">1.5 CR</button>
+
+   
+
+      <br>
+      <br>
+      <b>  {{text}}</b>
+      <br>
+      <br>
+
+     
+
+     <!--TIME -->
+
+     <label >Choose your payment plan:</label><br>
+
+      <button (click)="update(12)">MONTHLY</button>
+
+      <button (click)="update(4)">QUATERLY</button>
+
+      <button  (click)="update(1)">YEARLY</button>
+
+   
+
+      <br>
+      <br>
+      <b>{{text1}}</b>
+      <br>
+      <br>
+
+      
+
+  
+
+    <!-- <option value="self">Self</option>
+
+    <option value="spouse">Spouse</option>
+
+    <option value="child">Child</option> -->
+    
+  <label for="nominee" >NOMINEE</label><br>
+
+  <input type="text" id="nominee" name="nominee"  [(ngModel)]="policy.nominee"placeholder="Enter nominee" ><br>
+
+    
+
+    <label for="relationship" >RELATIONSHIP</label><br>
+    <select name="relationship" class="family-dropdown">
+      <option value="Father" >Father</option>
+      <option value="Mother" >Mother</option>
+      <option value="Friend" >Friend</option>
+      <option value="Spouse" >Spouse</option>
+      <option value="Child" >Child</option>
+      
+
+  
+
+  </select><br>
+  <hr>
+      <!--<button (click)="cal()">Calculate</button>-->
+
+      &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <p>{{this.policy.tot| currency:'INR'}}</p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <button class="b"(click)="persist()" [routerLink]="['/login-new']">PAY</button>
+
+    </form>
+
+  </div>
+
+</div>

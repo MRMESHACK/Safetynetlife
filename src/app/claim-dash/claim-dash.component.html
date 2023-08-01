@@ -1,0 +1,76 @@
+<!-- <table class="table">
+    <thead class="table-striped">
+
+        <h4>Active Policies under: {{ filteredProject.name }}</h4><br>
+        <tr>
+        
+        <th>Life Cover</th>
+        <th>Duration (in years)</th>
+        <th>Time Period</th>
+        <th>For</th>
+        <th>Total</th>
+        </tr>
+    </thead>
+   
+<tbody class="table-secondary">
+    
+        <tr *ngFor="let policy of filteredProject.policies">
+          <td>{{ policy.lifecover }}</td>
+          <td>{{ policy.duration }}</td>
+          <td>{{ policy.time }}</td>
+          <td>{{ policy.relationship }}</td>
+          <td>{{ policy.tot }}</td>
+        </tr>
+    
+    
+
+</tbody>
+</table> -->
+<body>
+<div class="main">
+<h4>Policies under: {{ filteredProject?.name }}</h4>
+<br>
+<div class="table-container">
+<table class="table" >
+    <thead class="table-striped">
+        
+      <tr>
+
+        <th>LIFE COVER</th>
+        <th>DURATION</th>
+        <th>TIME PERIOD</th>
+        <th>BOUGHT FOR</th>
+        <th>TOTAL</th>
+        <th>NOMINEE</th>
+        <th>STATUS</th>
+        <th>ACTION</th>
+      </tr>
+    </thead>
+    
+    <tbody class="table-secondary">
+       <ng-container *ngIf="filteredProject">
+        
+        <tr *ngFor="let policy of filteredProject.policies">
+          <td><b>{{ policy.lifecover }}</b></td>
+          <td><b>{{ policy.duration }}(yrs)</b></td>
+          <td><b>{{ policy.time }}</b></td>
+          <td><b>{{ policy.relationship }}</b></td>
+          <td><b>{{ policy.tot|currency:'INR' }} </b></td>
+          <td><b>{{ policy.nominee }}</b></td>
+         
+      <td [ngStyle]="{ color: policy.status === 'ACTIVE' ? 'green' : 'BLACK' }"><b>{{policy.status}}</b></td> 
+          <td >
+            <button (click)="claimPolicy(policy)"[disabled]="policy.isclaimed" [routerLink]="['/claim-information']" [ngStyle]="{ color: policy.status === 'ACTIVE' ? 'green' : 'BLACK' }"><b>{{policy.status}}</b></button>
+        </td>
+        </tr>
+
+      </ng-container>
+     
+    </tbody>
+  </table>
+
+</div>
+</div>
+
+<button class="log" [routerLink]="['/home']">LOGOUT</button>
+</body>

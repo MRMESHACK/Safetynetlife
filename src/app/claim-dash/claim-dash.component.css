@@ -1,0 +1,90 @@
+
+
+/* Center the table and h4 using flexbox */
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+   /*height: 100vh;  Optional: If you want the table to take up the full viewport height */
+  }
+  
+   
+  
+  /* Apply styles to the entire table */
+  .table {
+    width: 80%;
+    border-collapse: collapse;
+    /* border: 1px solid #ccc; */
+  }
+  .table thead th{
+   background-color:lightsteelblue ; 
+  }
+   
+  
+  /* Style the table header row */
+  /* .table thead {
+    background-color: blue;
+  } */
+  
+   
+  
+  /* Apply stripes to the table header */
+  .table-striped tbody tr:nth-child(odd) {
+    background-color: lightgrey;
+  }
+  
+   
+  h3{
+   display: inline-block;
+   color: red; 
+  }
+  /* Alternate row colors */
+  .table tbody td:nth-child(even) {
+    background-color:rgb(225, 225, 219)/* Red background color for even rows */
+  }
+  
+   
+  
+  .table tbody td:nth-child(odd) {
+    background-color: #d0d9df; /* Blue background color for odd rows */
+  }
+  
+  
+   
+  
+  /* Style the table cells */
+  .table td,
+  .table th {
+    padding: 8px;
+    border: 1px solid #e8e5e5;
+  }
+  
+  
+  /* Style the table title (h4) */
+  h4 {
+    text-align: center;
+    /* background-color:beige; */
+  }
+
+  body{
+    height: 1000px;
+   
+  }
+
+  .log{
+    margin-top: 250px;
+    margin-left: 1050px;
+    background-color: #1296d7;
+    color: black;
+    border-radius: 20px;
+    height: 40px;
+    width:90px;
+    
+   }
+ 
+   button:hover{
+    background-color: red; 
+   }

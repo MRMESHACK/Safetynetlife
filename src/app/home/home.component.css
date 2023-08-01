@@ -1,0 +1,319 @@
+header {
+
+    /* background-color: #333; */
+
+    color: #fff;
+
+    padding: 10px;
+
+    text-align: right;
+
+   
+
+  }
+  .head{
+    
+   text-align: left;
+  color: #ff6600;
+  font-weight: 600;
+  font-size: xx-large;
+  margin-left: 100px;
+  }
+
+
+img{
+
+   height: 100px;
+
+   width:200px;
+
+}
+
+ 
+
+ 
+
+.contact {
+
+    padding: 50px;
+
+    text-align: center;
+
+}
+
+ 
+
+.contact form input,
+
+.contact form textarea {
+
+    display: block;
+
+    width: 100%;
+
+    margin-bottom: 20px;
+
+    padding: 10px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 5px;
+
+}
+
+ 
+
+.contact form button {
+
+    padding: 10px 20px;
+
+    background-color: #ff6600;
+
+    color: #fff;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
+
+ 
+
+footer {
+
+    background-color: #333;
+
+    color: #fff;
+
+    padding: 10px;
+
+    text-align: center;
+
+}
+
+ 
+
+.hero {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background-image: url("src/assets/indiafirst-group-term-plan-SpotlightBanner.webp");
+
+    background-size: cover;
+
+    background-position: right;
+
+    height: 400px;
+
+   
+
+  }
+
+ 
+
+  .hero-content {
+
+    max-width: 600px;
+
+    color:black;
+
+    padding: 20px;
+
+  }
+
+ 
+
+  .hero-content h1 {
+
+    font-size: 40px;
+
+    margin-bottom: 20px;
+
+    color: white;
+
+  }
+
+ 
+
+  .hero-content p {
+
+    font-size: 18px;
+
+    margin-bottom: 30px;
+
+    color: white;
+
+  }
+
+ 
+
+  .cta-button {
+
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    background-color: #007bff;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    border-radius: 4px;
+
+    font-size: 18px;
+
+    transition: background-color 0.2s ease;
+
+  }
+
+ 
+
+  .cta-button:hover {
+
+    background-color:red;
+
+  }
+
+ 
+
+  .cta-button:focus {
+
+    outline: none;
+
+    background-color: #0056b3;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
+  }
+
+ 
+
+  .cta-button:active {
+
+    transform: translateY(2px);
+
+    background-color: #0056b3;
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+
+  }
+
+ 
+
+  .services {
+
+    display: flex;
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    justify-content: center;
+
+    gap: 10px;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    background-color: #f5f5f5;
+
+      padding: 20px;
+
+      border-radius: 6px;
+
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    padding: 40px 20px;
+
+  }
+
+ 
+
+  .service-card {
+
+    background-color: #fff;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    border-radius: 6px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    height: 400px;
+
+    width: 300px;
+
+    flex: 1;
+
+    margin: 0 10px;
+
+  }
+
+ 
+
+  .service-card img {
+
+    max-width: 100%;
+
+    border-radius: 6px;
+
+    margin-bottom: 20px;
+
+  }
+
+ 
+
+  .service-card h3 {
+
+    font-size: 24px;
+
+    margin-bottom: 10px;
+
+    color: darkblue;
+
+  }
+
+ 
+
+  .service-card p {
+
+    font-size: 16px;
+
+    color: #555;
+
+    line-height: 1.6;
+
+  }
+
+ 
+
+ 
+
+  .service-card {
+
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+  }
+
+  .service-card:hover {
+
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+    transform: translateY(-2px);
+
+  }
+
+ 
+
+
+h2{
+  text-align: center;
+}

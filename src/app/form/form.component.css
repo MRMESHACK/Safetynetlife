@@ -1,0 +1,200 @@
+#form {
+
+    max-width: 500px;
+
+    margin: 0 auto;
+
+    padding: 20px;
+
+    background-color: #fff;
+
+    border-radius: 6px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+   
+
+  }
+
+ 
+
+  label {
+
+    display: inline-block;
+
+    font-weight: bold;
+
+    /* margin-bottom: 5px; */
+
+  }
+
+ 
+
+  input[type="text"],
+
+  input[type="number"],
+
+  input[type="date"],
+
+  select {
+
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 4px;
+
+    margin-bottom: 10px;
+
+    display: block;
+
+  }
+
+ 
+
+  input[type="radio"] {
+
+    margin: 5px;
+
+   vertical-align: middle;
+
+  }
+
+ 
+
+  button {
+
+    padding: 10px 20px;
+
+    background-color: #6b6c6e;
+
+    color: #fff;
+
+    border: none;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    margin-right: 10px;
+
+  }
+
+ 
+
+  hr {
+
+    margin: 20px 0;
+
+    border: none;
+
+    border-bottom: 1px solid #ccc;
+
+  }
+
+ 
+
+  .family-dropdown {
+
+    font-size: 16px;
+
+    padding: 10px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 4px;
+
+ 
+
+   
+
+  }
+
+ 
+
+  /* Optional: Adding hover effect to buttons */
+
+  button:hover {
+
+    background-color:lightslategray;
+
+  }
+
+  .page-container{
+
+    background-image: url("src/assets/form-img.png");
+
+    background-repeat: repeat;
+
+    overflow: hidden;
+
+  }
+
+  .form-column {
+
+    flex-basis: calc(50% - 10px);
+
+  }
+
+  .form-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    width: 100%;
+
+  }
+  p {
+    display: inline-block;
+    font-size: 30px; /* Change this value to adjust the font size */
+  }
+
+
+  .b{
+    background-color: #004A7F;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    width: 90px;
+    height: 50px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-animation: glowing 1500ms infinite;
+    -moz-animation: glowing 1500ms infinite;
+    -o-animation: glowing 1500ms infinite;
+    animation: glowing 1500ms infinite;
+    }
+    @-webkit-keyframes glowing {
+    0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+    50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
+    100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+    }
+    
+    @-moz-keyframes glowing {
+    0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+    50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
+    100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+    }
+    
+    @-o-keyframes glowing {
+    0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+    50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+    100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+    }
+    
+    @keyframes glowing {
+    0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+    50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+    100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+    }
+
+ 

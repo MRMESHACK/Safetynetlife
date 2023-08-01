@@ -1,0 +1,154 @@
+h1 {
+
+    text-align: center;
+
+    margin: 20px 0;
+
+    color: white
+
+  }
+
+ 
+
+  /* Claims list styles */
+
+  .claims {
+
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    padding: 40px;
+
+    background-color: rgb(190, 193, 198);
+
+    border-radius: 6px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    color: black;
+
+    font-size: x-large;
+
+    font-weight: 500;
+
+  }
+
+ 
+
+  .claims ul {
+
+    list-style: none;
+
+    padding-left: 0;
+
+  }
+
+ 
+
+  .claims li {
+
+    font-size: 18px;
+
+    color: #555;
+
+    padding: 10px 0;
+
+    position: relative;
+
+    list-style: none;
+
+  }
+
+ 
+
+  .claims li:before {
+
+    content: "\2022";
+
+    color: #007bff;
+
+    font-size: 14px;
+
+    position: absolute;
+
+    left: -18px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+  }
+
+ button{
+ margin-left: 1097px;
+ margin-top: 10px;
+ 
+  display: inline-block;
+
+  padding: 8px 15px;
+
+  background-color: #007bff;
+
+  color: #fff;
+
+  text-decoration: none;
+
+  border-radius: 15px;
+
+  transition: background-color 0.2s ease;}
+
+
+
+  button:hover {
+
+      background-color:red;
+
+    }
+
+
+ 
+
+  .claims li:hover {
+
+    background-color: lightgrey;
+
+  }
+
+  .page-container{
+
+    background-image: url("src/assets/info.png");
+
+    overflow: hidden;
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+  }
+
+ 
+
+  .condolence-box {
+
+    border: 2px solid #ccc;
+
+    background-color: #a93c3c;
+
+    color: white;
+
+    padding: 20px;
+
+    max-width: 2000px; /* Adjust the width as needed */
+
+    margin: 0 auto; /* Center the box horizontally */
+
+    text-align: center;
+
+    font-size:x-large;
+
+    font-weight: 300;
+
+    font-family: 'Times New Roman';
+
+  }

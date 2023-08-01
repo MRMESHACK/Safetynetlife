@@ -1,0 +1,13 @@
+<div class="page-container">
+<form class="form">
+    <h2 style="text-align: center;">Register Here!</h2>
+    <label>Email</label>
+    <input  class="form-control" type="email" name="email" [(ngModel)]="login.email" [(ngModel)]="project.email"required placeholder="Enter your email">
+    <br><br>
+    <label>Password</label>
+    <input class="form-control" type="password" name="password"  [(ngModel)]="login.password"required placeholder="Create Password ">
+    <br>
+    <button (click)="persist()" [routerLink]="['/payment']">Register</button>
+</form>
+</div>
+<router-outlet></router-outlet>

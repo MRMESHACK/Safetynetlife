@@ -1,0 +1,32 @@
+<!-- login.html -->
+<!-- <div>
+    <h2>Login</h2>
+    <form (submit)="onSubmit()">
+      <label for="username">Username:</label>
+      <input type="text" id="username" [(ngModel)]="username" name="username" required>
+  
+      <label for="password">Password:</label>
+      <input type="password" id="password" [(ngModel)]="password" name="password" required>
+  
+      <button type="submit">Login</button>
+    </form>
+  
+  </div>
+ -->
+
+ <div class="page-container">
+  <form class="form" (submit)="onSubmit()">
+      <h2 style="text-align: center;">Login Here</h2>
+      <label>Email</label>
+      <input  class="form-control" type="email" name="email" [(ngModel)]="username" [(ngModel)]="email"  required placeholder="Enter your email" autocomplete="off">
+      <br><br>
+      <label>Password</label>
+      <input class="form-control" type="password" name="password"  [(ngModel)]="password"required placeholder="Enter Password ">
+      <br>
+      <button type="submit" >Login</button>
+  </form>
+  </div>
+  
+  
+  <router-outlet></router-outlet>
+
